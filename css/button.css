@@ -1,0 +1,51 @@
+.button{
+    border-style:none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+}
+
+.button.blue{
+    background-color: #1FB6FF;
+    border-radius: 16px;
+
+}
+
+button.green{
+    background-color: #2fadcc;
+    border-radius: 14px;
+}
+
+button.red{
+    background-color: #60aaf0;
+    border-radius: 14px;
+}
+
+.button:hover{
+    box-shadow: inset 1500px 5px 5px #00000055;
+    
+}
+
+@media(max-width:480px){
+    .button.mobile{
+        color:transparent;
+        font-size:0;
+        width:90%;
+        height:40px;
+        border-radius: 16px;
+        position:relative;
+        top: 15vh;
+        left: 5vw;
+    }
+    .button.mobile::before{
+        content: "cadastrar";
+        color:white;
+        font-size:1rem;
+        width:100%;
+        height:100%;
+    }
+}
